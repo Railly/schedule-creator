@@ -4,21 +4,19 @@ import { theme } from '../../themes'
 
 export const StyledForm = styled.form`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  margin: 0 2.5em;
+  width: 70vw;
   margin-bottom: 1.25em;
-  flex-direction: column;
   background-color: ${theme.yellow};
 `
 export const Main = styled.div`
   display: flex;
-  height: calc(100vh - 100px);
-  width: 100vw;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 100px);
   background-color: ${theme.white}
 `
 export const Button = styled.button`
@@ -41,7 +39,7 @@ export const Div = styled.div`
   flex-direction: column;
   width: 10em;
   justify-content: space-around;
-  margin-top: 1rem;
+  margin-top: 1em;
 `
 export const Linker = props => (
   <Link to={props.route} style={{ textDecoration: 'none' }}>
@@ -50,7 +48,7 @@ export const Linker = props => (
 )
 
 export const Input = styled.input`
-  margin-top: 1em;
+  margin-top: 0.5em;
   padding: 0.5em;
   color: ${props => props.inputColor || 'palevioletred'};
   width: 12em;
@@ -59,14 +57,23 @@ export const Input = styled.input`
   border-radius: 3px;
 `
 
+export const Select = styled.select`
+  margin-top: 1em;
+  padding: 0.5em;
+  color: palevioletred;
+  width: 12em;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+`
+
 export const Span = styled.span`
   position: absolute;
+  top: 0.9em;
+  right: 1.6em;
   background-color: papayawhip;
-  width: 40px;
-  height: 20px;
+  width: 2.5em;
+  height: 1.5em;
   text-align: center;
-  vertical-align: top;
-  top: 0.9375em;
-  right: 1.5625em;
   border-radius: 3px;
 `

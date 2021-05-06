@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
-import styled from 'styled-components'
 import {
   StyledForm,
   Main,
@@ -8,18 +7,9 @@ import {
   ButtonWrapper,
   Div,
   Input,
+  Select,
   Span,
 } from '../components/styled-form'
-
-const Select = styled.select`
-  margin-top: 1em;
-  padding: 0.5em;
-  color: palevioletred;
-  width: 12em;
-  background: papayawhip;
-  border: none;
-  border-radius: 3px;
-`
 
 const Form = ({ history }) => {
   const maxNumberSubjects = Number(history.location.state.numberSubjects)
@@ -85,7 +75,7 @@ const Form = ({ history }) => {
             Fin:
             <Input
               type="time"
-              name="startTime"
+              name="endTime"
               onChange={handleChange}
               required
             />
