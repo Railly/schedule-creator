@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
 import { theme } from '../../themes'
 
 export const StyledForm = styled.form`
@@ -44,7 +44,7 @@ export const Div = styled.div`
   margin-top: 1rem;
 `
 export const Linker = props => (
-  <Link to={props.route} style={{ textDecoration: 'none'}}>
+  <Link to={props.route} style={{ textDecoration: 'none' }}>
     <Button {...props} children={props.children} />
   </Link>
 )
@@ -59,32 +59,6 @@ export const Input = styled.input`
   border-radius: 3px;
 `
 
-export const InputWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  Input {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    height: 28px;
-    text-align:right;
-  }
-
-  span {
-    background-color: papayawhip;
-    display: block;
-    color: ${props => props.inputColor || 'palevioletred'};
-    margin-top: 0.8438em;
-    padding-top: 1.83px;
-    padding-right: 5px;
-    height: 1.75em;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-
-  span:first-child{
-    padding-top:1.5px;
-  }
-`
 export const Span = styled.span`
   position: absolute;
   background-color: papayawhip;

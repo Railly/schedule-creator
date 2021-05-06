@@ -8,7 +8,6 @@ import {
   ButtonWrapper,
   Div,
   Input,
-  InputWrapper,
   Span,
 } from '../components/styled-form'
 
@@ -83,31 +82,13 @@ const Form = ({ history }) => {
         </Div>
         <Div>
           <label>
-            Duración:
-            <InputWrapper>
-              <Input
-                type="number"
-                name="hours"
-                max="12"
-                min="0"
-                onChange={handleChange}
-                hours
-                required
-              />
-              <span>Horas</span>
-            </InputWrapper>
-            <InputWrapper>
-              <Input
-                type="number"
-                name="minutes"
-                max="59"
-                min="0"
-                onChange={handleChange}
-                minutes
-                required
-              />
-              <span>Minutos</span>
-            </InputWrapper>
+            Fin:
+            <Input
+              type="time"
+              name="startTime"
+              onChange={handleChange}
+              required
+            />
           </label>
         </Div>
         <ButtonWrapper>
@@ -127,7 +108,7 @@ const Form = ({ history }) => {
           )}
         </ButtonWrapper>
       </StyledForm>
-    </Main>
+    </Main >
   )
 }
 
