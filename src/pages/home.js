@@ -1,24 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyledForm, Main, Button, ButtonWrapper, Div, Linker, Input } from '../components/styled-form'
 
-const Home = () => {
+const Home =({ history }) => {
+  const [info, setInfo] = useState({})
+
+  const handleChange = e => {
+    setInfo({
+      ...info,
+      [e.target.name]: e.target.value,
+    })
+  }
+  
+  const onSubmit = (e) => {
+    e.preventDefault()
+    history.push('/form', {...info})
+  }
+
   return(
     <Main>
-      <StyledForm>
+      <StyledForm onSubmit={onSubmit}>
         <Div>
         <label>
           Ciclo:
-          <Input type="text" name="cicle" required/>
+          <Input type="text" name="semester"  onChange={handleChange} required/>
         </label>
         </Div>
         <Div>
         <label>
           N° de cursos:
-          <Input type="number" min="1" max="8" name="number-courses" required/>
+          <Input type="number" name="numberSubjects" min="1" max="8" onChange={handleChange}  required/>
         </label>
         </Div>
         <ButtonWrapper>
-          <Button as={Linker}  route="/form" primary>Siguiente</Button>
+          <Button type='submit' primary>Siguiente</Button>
         </ButtonWrapper>
       </StyledForm>
     </Main>

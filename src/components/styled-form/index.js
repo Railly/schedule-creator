@@ -4,10 +4,12 @@ import { theme } from '../../themes'
 
 export const StyledForm = styled.form`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100vw;
   margin: 0 2.5em;
+  margin-bottom: 1.25em;
   flex-direction: column;
   background-color: ${theme.yellow};
 `
@@ -50,9 +52,47 @@ export const Linker = props => (
 export const Input = styled.input`
   margin-top: 1em;
   padding: 0.5em;
-  color: ${props => props.inputColor || "palevioletred"};
+  color: ${props => props.inputColor || 'palevioletred'};
   width: 12em;
-  background: papayawhip;
+  background-color: papayawhip;
   border: none;
   border-radius: 3px;
-`;
+`
+
+export const InputWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  Input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 28px;
+    text-align:right;
+  }
+
+  span {
+    background-color: papayawhip;
+    display: block;
+    color: ${props => props.inputColor || 'palevioletred'};
+    margin-top: 0.8438em;
+    padding-top: 1.83px;
+    padding-right: 5px;
+    height: 1.75em;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  span:first-child{
+    padding-top:1.5px;
+  }
+`
+export const Span = styled.span`
+  position: absolute;
+  background-color: papayawhip;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: top;
+  top: 0.9375em;
+  right: 1.5625em;
+  border-radius: 3px;
+`
