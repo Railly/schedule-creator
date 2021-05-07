@@ -92,7 +92,7 @@ const Form = ({ history }) => {
         </Div>
         <Div>
           <label>
-            <Select name="day" onChange={e => handleChange(e)}>
+            <Select name="day" onChange={e => handleChange(e)} required>
               <option value="default" hidden>
                 Seleccione un día:
               </option>

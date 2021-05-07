@@ -72,7 +72,7 @@ export const Span = styled.span`
   top: 0.9em;
   right: 1.6em;
   background-color: papayawhip;
-  width: 2.5em;
+  width: 3.5em;
   height: 1.5em;
   text-align: center;
   border-radius: 3px;
