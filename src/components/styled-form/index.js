@@ -21,8 +21,8 @@ export const Main = styled.div`
 export const Button = styled.button`
   display: flex;
   align-items: center;
-  background: ${props => props.primary ? "palevioletred" : "white"};
-  color: ${props => props.primary ? "white" : "palevioletred"};
+  background: ${props => (props.primary ? 'palevioletred' : 'white')};
+  color: ${props => (props.primary ? 'white' : 'palevioletred')};
   font-size: 1em;
   border: 2px solid palevioletred;
   border-radius: 3px;
@@ -34,7 +34,7 @@ export const ButtonWrapper = styled.div`
 `
 
 export const Div = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 10em;
   justify-content: space-around;
@@ -51,6 +51,7 @@ export const Input = styled.input`
   padding: 0.5em;
   color: ${props => props.inputColor || 'palevioletred'};
   width: 12em;
+  height: ${props => (props.color ? '3em' : '')};
   background-color: papayawhip;
   border: none;
   border-radius: 3px;
@@ -75,4 +76,4 @@ export const Span = styled.span`
   height: 1.5em;
   text-align: center;
   border-radius: 3px;
-` 
+`
