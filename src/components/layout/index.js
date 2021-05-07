@@ -39,20 +39,20 @@ const Footer = styled.footer`
 `
 
 const Layout = ({ children }) => {
-  return(
+  return (
     <>
       <header>
         <Nav>
-          <Img src={logo}/>
+          <Img src={logo} />
           <Ul>
             <li><LinkRouter to="/">Home</LinkRouter></li>
-            <li><Anchor href="#">Repositorio</Anchor></li>
+            <li><Anchor href="https://github.com/Railly/schedule-creator" target="_blank" rel="noreferrer">Repositorio</Anchor></li>
           </Ul>
         </Nav>
       </header>
       {children}
       <Footer>
-       © Todos los derechos reservados 2021
+        © Todos los derechos reservados 2021
       </Footer>
     </>
   )

@@ -112,6 +112,8 @@ const Form = ({ history }) => {
             <Input
               type="time"
               name="startTime"
+              min="8:00"
+              max="22:59"
               onChange={handleChange}
               required
             />
@@ -123,6 +125,8 @@ const Form = ({ history }) => {
             <Input
               type="time"
               name="endTime"
+              min="9:00"
+              max="23:59"
               onChange={handleChange}
               required
             />
