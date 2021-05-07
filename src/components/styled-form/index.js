@@ -9,15 +9,14 @@ export const StyledForm = styled.form`
   justify-content: center;
   align-items: center;
   width: 70vw;
-  margin-bottom: 1.25em;
   background-color: ${theme.yellow};
 `
 export const Main = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
-  background-color: ${theme.white}
+  height: calc(100vh - 8.3125em);
+  background-color: ${theme.white};
 `
 export const Button = styled.button`
   display: flex;
@@ -76,4 +75,4 @@ export const Span = styled.span`
   height: 1.5em;
   text-align: center;
   border-radius: 3px;
-`
+` 

@@ -32,11 +32,8 @@ const LinkRouter = styled(Link)`
 `
 
 const Footer = styled.footer`
-  position: fixed;
-  bottom: 0;
   text-align: center;
   padding: 1em 0;
-  width: 100vw; 
   background: ${theme.gray};
   color: ${theme.white};
 `

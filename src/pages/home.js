@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyledForm, Main, Button, ButtonWrapper, Div, Linker, Input } from '../components/styled-form'
+import { StyledForm, Main, Button, ButtonWrapper, Div, Input } from '../components/styled-form'
 
 const Home = ({ history }) => {
   const [info, setInfo] = useState({})

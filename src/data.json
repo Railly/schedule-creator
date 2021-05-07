@@ -1,48 +1,94 @@
 [
   {
     "subject": "Probabilidades",
+    "time": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
     "startTime": "8:00",
     "endTime": "12:00",
     "day": "monday"
   },
   {
     "subject": "Sistemas Digitales",
+"time": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
     "startTime": "8:00",
     "endTime": "13:00",
     "day": "tuesday"
   },
   {
     "subject": "Emprendimiento e Innovacion",
+    "time": ["8", "9", "10", "11", "12"],
     "startTime": "8:00",
     "endTime": "12:00",
     "day": "wednesday"
   },
   {
     "subject": "Matematica Discreta",
+    "time": [
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
     "startTime": "14:00",
     "endTime": "18:00",
     "day": "tuesday"
   },
   {
     "subject": "Algoritmica II",
+    "time": ["8", "9", "10", "11", "12", "13"],
     "startTime": "8:00",
     "endTime": "13:00",
     "day": "friday"
   },
   {
     "subject": "Contabilidad",
+    "time": [
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
     "startTime": "14:00",
     "endTime": "18:00",
     "day": "friday"
   },
   {
     "subject": "Procesos de Software",
+    "time": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
     "startTime": "8:00",
     "endTime": "13:00",
     "day": "saturday"
   },
   {
     "subject": "Estructura de Datos",
+    "time": [
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
     "startTime": "13:00",
     "endTime": "17:00",
     "day": "thursday"
