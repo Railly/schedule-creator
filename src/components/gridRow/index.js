@@ -35,8 +35,6 @@ const GridRow = ({ startTime, endTime, data }) => {
 
   const filterData = (data, day, startTime) => {
     const newData = transformJson(data)
-    console.log(newData)
-
     const filteredData = newData
       .filter(x => x.day === day)
       .filter(y =>
@@ -46,7 +44,6 @@ const GridRow = ({ startTime, endTime, data }) => {
             : startTime.slice(0, 2),
         ),
       )
-    console.log(filteredData, 'filterData')
     return filteredData
   }
 
