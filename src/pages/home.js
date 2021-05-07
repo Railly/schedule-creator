@@ -28,7 +28,7 @@ const Home = ({ history }) => {
         <Div>
           <label>
             N° de cursos:
-          <Input type="number" name="numberSubjects" min="1" max="8" onChange={handleChange} required />
+          <Input type="number" name="numberSubjects" min="1" max="40" onChange={handleChange} required />
           </label>
         </Div>
         <ButtonWrapper>
