@@ -11,7 +11,7 @@ const GridContainer = styled.div`
   height: 100vh;
   gap: 0.25em;
 
-  p { 
+  p {
     display: flex;
     justify-content: center;
     align-items: center;
