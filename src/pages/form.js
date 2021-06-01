@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
 import { Redirect } from 'react-router-dom'
 import {
   StyledForm,
@@ -12,38 +11,9 @@ import {
   Span,
 } from '../components/styled-form'
 
-const ColorWrapper = styled.div`
-  display: flex;
-  background-color: #ffefd5;
-  padding: 0.3em;
-  padding-right: 1.2em;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  width: 100px;
-  margin-top: 1em;
-  margin-left: 1.5em;
-  height: 25px;
-
-  input {
-    opacity: 0;
-  }
-
-  div {
-    width: 100%;
-    border: 1px solid;
-    height: 100%;
-    background: white;
-  }
-  input[type='checkbox']:checked + div {
-    background: black;
-  }
-`
-
 const Form = ({ history }) => {
   const maxNumberSubjects = Number(history.location.state.numberSubjects)
   const [allForms, setAllForms] = useState([0])
-  const [checked, setChecked] = useState(true)
   const [form, setForm] = useState({})
   const [numberSubjects, setNumberSubjects] = useState(1)
 
@@ -51,18 +21,6 @@ const Form = ({ history }) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
-    })
-  }
-
-  const handleFontColor = () => {
-    setChecked(!checked)
-    updateFontColor()
-  }
-
-  const updateFontColor = () => {
-    setForm({
-      ...form,
-      colorFg: checked,
     })
   }
 
@@ -142,20 +100,6 @@ const Form = ({ history }) => {
               color
               required
             />
-          </label>
-        </Div>
-        <Div>
-          <label>
-            Color de fuente:
-            <ColorWrapper>
-              <input
-                type="checkbox"
-                name="colorFg"
-                onClick={handleFontColor}
-                checked={checked}
-              />
-              <div></div>
-            </ColorWrapper>
           </label>
         </Div>
         <ButtonWrapper>
